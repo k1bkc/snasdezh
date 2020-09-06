@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.snadezh" name="[B][COLOR gold]_Snadezh_[/COLOR][/B]" version="5.1.9" provider-name="[COLOR gold]KavaN[/COLOR]">
+<addon id="plugin.video.snadezh" name="[B][COLOR gold]_Snadezh_[/COLOR][/B]" version="5.5.5" provider-name="[COLOR gold]KavaN[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.common.plugin.cache" version="2.5.5"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.simple.downloader" version="1.9.5"/>
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="5.4.5"/>
+    <import addon="plugin.video.youtube" optional="true" />
     <import addon="script.module.simplejson" />    
     <import addon="script.module.livestreamer" optional="true"/>
     <import addon="script.module.pyamf" optional="true"/>
-    <import addon="script.module.vip.nettv" version="2.0"/>
-    <import addon="script.module.urlresolver" version="4.0.12"/>
-    <import addon="plugin.video.f4mTester" version="2.7.1"/>
+    <import addon="script.module.urlresolver" version="5.0.44"/>
+    <import addon="script.module.metahandler" optional="true" />
+    <import addon="plugin.video.live.streamspro" version="2.9.0" />
+    <import addon="plugin.video.f4mTester" version="2.7.2"/>
+    <import addon="repository.snadezh" version="2.2"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -27,48 +28,6 @@
 	
 	</description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.UltraStream" name="[COLOR gold]_UltraStream_[/COLOR]" version="1.0.1" provider-name="KavaN">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Live TV Channels</summary>
-    <description lang="en_gb">Live TV Channels</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <website>http://snadezh.blogspot.nl/</website>
-    <email>kavansna@gmail.com</email>
-  </extension>
-</addon>
-
-<addon id="plugin.video.PersianMovies"
-       name="[COLOR gold]Persian Movies[/COLOR]"
-       version="20.2.2018"
-       provider-name="KavaN">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests"/>
-	<import addon="script.module.beautifulsoup" version="3.2.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Persian Movies and Series</summary>
-    <language>en</language>
-    <description lang="en"></description>
-     <platform>all</platform>
   </extension>
 </addon>
 
